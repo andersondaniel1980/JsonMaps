@@ -37,16 +37,15 @@ $("#btn2").on('click',function(){
 	$('#busca').val("");
 });
 
-
 $("#btn1").on('click',function(){
 		var pesquisa = $('#busca').val()
 		var endereco = pesquisa.replace(" ", "%20");
-		var endereco = pesquisa.replace("ã", "a");
-		var endereco = pesquisa.replace("á", "a");
-		var endereco = pesquisa.replace("ó", "o");
-		var endereco = pesquisa.replace("ê", "e");
-		var endereco = pesquisa.replace("í", "i");
-		var endereco = pesquisa.replace("-", "%20");
+// 		var endereco = pesquisa.replace("ã", "a");
+// 		var endereco = pesquisa.replace("á", "a");
+// 		var endereco = pesquisa.replace("ó", "o");
+// 		var endereco = pesquisa.replace("ê", "e");
+// 		var endereco = pesquisa.replace("í", "i");
+// 		var endereco = pesquisa.replace("-", "%20");
 
 		endereco = "https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyBe_OpGrMSgvbVK3hfD4RqiaoAsIeD6gdY&new_forward_geocoder=true&address="+endereco;
 
